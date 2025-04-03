@@ -49,7 +49,7 @@ public class ExportCommandTest {
         try {
             exportCommand.execute(mockModel);
         } catch (CommandException e) {
-            assertEquals(ExportCommand.MESSAGE_FAILURE + "\nFile name not provided!", e.getMessage());
+            assertEquals(ExportCommand.MESSAGE_FAILURE + "\nInvalid file name!", e.getMessage());
         }
 
     }
