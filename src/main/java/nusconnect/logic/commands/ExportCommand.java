@@ -41,7 +41,7 @@ public class ExportCommand extends Command {
     public CommandResult execute(Model model) throws CommandException {
         try {
             if (!fileString.endsWith(".json")) {
-                throw new CommandException(MESSAGE_FAILURE + "\nFile name not provided!");
+                throw new CommandException(MESSAGE_FAILURE + "\nInvalid file name!");
             }
 
             Path filePath = Paths.get(fileString);
